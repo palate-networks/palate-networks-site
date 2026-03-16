@@ -1,250 +1,269 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Palate Networks Vancouver</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  </head>
+<html lang="en">
 
-<body id="top">
-  <div class="navbar-fixed">
-    <nav class="#0277bd light-blue darken-3" role="navigation">
-      <div class="nav-wrapper container">
-        <img src="./img/logo_icon.png" alt="palate-icon" class='brand-logo palate-icon hide-on-med-and-down'>
-        <a id="logo-container" href="#top" class="brand-logo center">
-          Palate Networks</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Contact" href="#contact">
-            <i class="material-icons">perm_phone_msg</i>
-          </a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this will show up on the browser tab title -->
+  <title>Palate Networks | Local IT Help in Vancouver</title>
+  <meta name="description"
+    content="Palate Networks provides SMB IT solutions and consultations in Vancouver, with practical on-site and remote support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-row">
+      <a href="#top" class="brand" aria-label="Palate Networks home">
+        <img src="./img/logo-horiz-w.png" alt="Palate Networks" id="navLogo" class="brand-logo"
+          data-logo-light="./img/logo-horiz-w.png" data-logo-dark="./img/logo-horiz-b.png">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact" class="link-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-brand">
+        <img src="./img/logo-horiz-w.png" alt="Palate Networks" class="hero-logo hero-logo-desktop">
+        <img src="./img/logo-vert-w.png" alt="Palate Networks" class="hero-logo hero-logo-mobile">
+      </div>
+      <p class="kicker">Managed Services & Strategy</p>
+      <h1>SMB IT Solutions in Vancouver</h1>
+      <p class="hero-copy">
+        Palate Networks delivers expert IT management and strategic foresight to small and mid-sized firms across
+        Vancouver.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid">Email Me</a>
+        <a href="#services" class="btn btn-outline">See Services</a>
+      </div>
+    </div>
+    <a href="#services" class="scroll-hint" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </header>
+
+  <section class="intro">
+    <div class="container intro-grid">
+      <div>
+        <h2>A local partner who speaks your language.</h2>
+        <p>
+          Palate Networks is built on the same foundations as the firms we serve.
+          We understand that for a professional practice, uptime isn't just a metric—it&apos;s your reputation.
+          That&apos;s why we take a proactive, preventative approach to your technology.
+        </p>
+      </div>
+      <div class="quick-facts">
+        <div><strong>Tailored IT</strong><span>From infrastructure audits to day-to-day support</span></div>
+        <div><strong>Direct Access</strong><span>One-on-one consulting without the "help desk" runaround</span></div>
+        <div><strong>On-Site & Remote</strong><span>Hybrid support that meets you exactly where you are</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Our Services</h2>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <i class="fa-solid fa-wifi"></i>
+          <h3>On-Site Technical Support</h3>
+          <p>Resolving on-site technical and equipment issues is our specialty.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-desktop"></i>
+          <h3>Network Maintenance</h3>
+          <p>Ongoing maintenance of computer networks and standardized equipment procedures.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud and Office Tools</h3>
+          <p>Support for tools like Office 365 and remote administration where needed.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Best Practices Guidance</h3>
+          <p>Client education and practical guidance to improve reliability and reduce risk.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-shop"></i>
+          <h3>POS and Hospitality Support</h3>
+          <p>Experience maintaining POS, payment terminals, and restaurant backend infrastructure.</p>
+        </article>
+        <article class="card reveal">
+          <i class="fa-solid fa-toolbox"></i>
+          <h3>Remote + ISP Coordination</h3>
+          <p>Phone, email, remote desktop assistance, and provider coordination for ISP issues.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow">About</p>
+        <h2>Focused on practical support.</h2>
+        <p>Our core focus is professional services firms in the Vancouver area. We work to keep systems running
+          smoothly and help teams avoid unnecessary downtime.</p>
+        <p>Whether it is a major network upgrade or a simple workstation issue, support is tailored to what your team
+          actually needs.</p>
+      </div>
+      <div class="about-box reveal">
+        <h3>Technologies we work with</h3>
+        <ul>
+          <!-- you can add more technologies here, but probably keep it around under 8 items.  -->
+          <li><i class="fa-solid fa-check"></i> Windows Server and Microsoft Hyper-V</li>
+          <li><i class="fa-solid fa-check"></i> Office 365 and cloud services</li>
+          <li><i class="fa-solid fa-check"></i> Meraki, LogMeIn, and remote support tools</li>
+          <li><i class="fa-solid fa-check"></i> Micros POS, Squirrel, and Halo systems</li>
         </ul>
       </div>
-    </nav>
-  </div>
-
-<!-- header parallax -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="./img/para.jpeg" alt="palate parallax header">
     </div>
-    <div class="container centered center-align">
-      <img src="./img/logo-ver-1.png" class='center' id="header-image" alt="palate header logo">
-    </div>
-  </div>
+  </section>
 
-<!-- header 2 -->
-  <div class="section #0277bd light-blue darken-3">
-    <div class="row container">
-      <h3 class="header grey-text text-lighten-3">SMB IT solutions in Vancouver</h3>
-      <p class="light grey-text text-lighten-3 flow-text">
-        <strong>Palate Networks</strong> is located in the beautiful city of Vancouver, in the heart of historic Chinatown. We provide IT solutions and consultations for professional services firms.
-      </p>
-    </div>
-  </div>
-
-  <!--   Icon Section   -->
-  <div id="" class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="large material-icons">business</i></h2>
-            <h5 class="center">SMB Services</h5>
-            <p class="light">Palate Networks is a small business, just like you! We know how important it is to keep your business running, so we can take proactive steps to avoid downtime. Whether it's a major network upgrade, or a small hardware upgrade for your business PC, we got you covered. </p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="large material-icons">group</i></h2>
-            <h5 class="center">Personalized</h5>
-            <p class="light">Not only are we tech savvy, we are people savvy too. We can have one-on-ones to talk about what you want, without selling you a generic service package.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center blue-text"><i class="large material-icons">pin_drop</i></h2>
-            <h5 class="center">To Your Door</h5>
-
-            <p class="light">We are located in Chinatown, Vancouver. We can provide remote desktop assistance, or come straight to your door for those emergency situations. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-<!-- summary -->
-  <div id="services" class="">
+  <section class="clients" id="clients">
     <div class="container">
-      <h3 class="header blue-text">Our Services</h3>
-      <p class="flow-text"><i class="material-icons">build</i> Resolving on-site technical and equipment issues is our specialty. </p>
-      <p>Our core focus is directed towards professional services firms in the Vancouver area. We provide ongoing maintenance of computer networks and standardize equipment and procedures. We also have experience in maintaining POS, payment terminals and backend network infrastructure within a restaurant environment.</p>
-      <p>We educate clients on best practices and interact with service providers as needed for ISP related issues. We can also provide phone, email or remote desktop assistance to our clients. </p>
-
-      <p><strong>We work with technologies like:</strong> Server 2012, Microsoft Hyper-V, Office 365, Meraki, LogMeIn, Micros POS, Squirrel, Halo. </p>
-    </div>
-  </div>
-
-<!-- clients card list -->
-  <div class="container">
-    <br>
-    <h3>Previous Clients</h3>
-    <div class="row">
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Big Chip Accounting
-          </span>
-        </div>
+      <div class="section-head reveal">
+        <p class="eyebrow">Previous Clients</p>
+        <h2>Businesses we have supported</h2>
       </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Browns Socialhouse
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Tap & Barrel Brands Restaurants
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">KMK Law Corporation
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Mah Society of Vancouver
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Innovative Steel Ltd
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">3D Smith Studios
-          </span>
-        </div>
-      </div>
-      <div class="col s12 m4 l3">
-        <div class="card-panel light-blue valign-wrapper darken-3 center">
-          <span class="white-text">Rare One Mfg Co
-          </span>
-        </div>
+      <div class="client-grid">
+        <!-- you can add more client pills here, it will automatically scale. -->
+        <div class="client-pill reveal">Big Chip Accounting</div>
+        <div class="client-pill reveal">Browns Socialhouse</div>
+        <div class="client-pill reveal">Tap &amp; Barrel Brands Restaurants</div>
+        <div class="client-pill reveal">KMK Law Corporation</div>
+        <div class="client-pill reveal">Mah Society of Vancouver</div>
+        <div class="client-pill reveal">Innovative Steel Ltd</div>
+        <div class="client-pill reveal">3D Smith Studios</div>
+        <div class="client-pill reveal">Rare One Mfg Co</div>
       </div>
     </div>
+  </section>
 
-
-
-    <!-- <div class="divider"></div>
-    <h3>Testimonials</h3>
-    <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2" href="mailto:rick@palatenetworks.ca?Subject=Testimonial%20feedback" target="_top">email a feedback</a>
+  <section class="contact" id="contact">
+    <div class="container contact-wrap">
+      <div class="contact-intro reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Have something else on your mind?</h2>
+        <p>If you have a business inquiry, please get in touch through the contact information below.</p>
       </div>
-      <div class="carousel-item #3949ab indigo darken-1 white-text" href="#one!">
-        <h2>Joe Johnson</h2>
-        <em class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla.</em>
-      </div>
-      <div class="carousel-item #512da8 deep-purple darken-2 white-text" href="#two!">
-        <h2>Joe Johnson</h2>
-        <em class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla.</em>
-      </div>
-      <div class="carousel-item #1e88e5 blue darken-1 white-text" href="#three!">
-        <h2>Joe Johnson</h2>
-        <p class="white-text">This is your third panel</p>
-      </div>
-      <div class="carousel-item blue white-text" href="#four!">
-        <h2>Joe Johnson</h2>
-        <p class="white-text">This is your fourth panel</p>
-      </div>
-    </div> -->
-
-
-
-    <br><br>
-  </div>
-
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="./img/map.png" alt="chinatown vancouver static map">
-    </div>
-
-    <div class="container centered">
-      <div class="card">
-        <div class="card-content z-depth-4 center">
-          <h3 class="card-title">Have something else on your mind?</h3>
-          <p>
-            If you have a business inquiry, please get in touch through the contact information below.
-          </p>
-          <br>
-        </div>
+      <div class="contact-card reveal">
+        <img src="./img/logo-vert-w.png" alt="Palate Networks" class="contact-logo">
+        <ul>
+          <li><i class="fa-solid fa-user"></i> Rick Quach · IT Principal</li>
+          <li><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:rick@palatenetworks.ca?Subject=Inquiry%20website">rick@palatenetworks.ca</a>
+          </li>
+          <li><i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/palatenetworks" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/palatenetworks</a>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i> Vancouver, BC</li>
+        </ul>
+        <a class="btn btn-solid full" href="mailto:rick@palatenetworks.ca?Subject=Business%20IT%20Inquiry">Email
+          Rick</a>
       </div>
     </div>
+  </section>
 
-      </div>
-
-<!-- page footer -->
-
-  <footer id="contact" class="page-footer #0277bd light-blue darken-3">
-    <div class="container">
-      <div class="row">
-
-        <div class="col l6 s12">
-          <h5 class="white-text">
-            <i class="material-icons">contact_mail</i>
-              Contact Info
-          </h5>
-          <hr>
-          <ul>
-            <li class="grey-text text-lighten-4">
-              Rick Quach · IT Principal </li>
-            <a class="grey-text text-lighten-4" href="mailto:rick@palatenetworks.ca?Subject=Inquiry%20website" target="_top">rick@palatenetworks.ca</a>
-            <li class="grey-text text-lighten-4"></li>
-            <li class="grey-text text-lighten-4">Vancouver, BC</li>
-          </ul>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">LinkedIn</h5>
-          <p><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/palatenetworks">
-            <i class="social-icon fa fa-linkedin-square" aria-hidden="true"></i>
-            Rick Quach
-          </a></p>
-          <p><a class="grey-text text-lighten-3" href="">Palate Networks</a></p>
-            <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-copyright">
-      <div class="container">
-      © 2017 Palate Networks All Rights Reserved · Built & maintained by
-      <a class="brown-text text-lighten-3" href="https://www.linkedin.com/in/nictamura/">nTamura</a>
-      </div>
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>&copy; <span id="year"></span> nT &#128900; Palate Networks</p>
+      <p>&#9829; Made in Vancouver, BC </p>
     </div>
   </footer>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.parallax').parallax();
-      $('.collapsible').collapsible();
-      $('.tooltipped').tooltip({delay: 50});
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
+  <!-- dont need to modify anything below this area -->
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    const navLogo = document.getElementById('navLogo');
+    const lightLogo = navLogo?.dataset.logoLight;
+    const darkLogo = navLogo?.dataset.logoDark;
+
+    const updateNavbar = () => {
+      const scrolled = window.scrollY > 50;
+      navbar.classList.toggle('scrolled', scrolled);
+      if (navLogo && lightLogo && darkLogo) {
+        navLogo.src = scrolled ? darkLogo : lightLogo;
+      }
+    };
+
+    updateNavbar();
+    window.addEventListener('scroll', updateNavbar);
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('active', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen);
     });
+
+    navLinks.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('active');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener('click', function (event) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          event.preventDefault();
+          const navHeight = navbar ? navbar.offsetHeight : 74;
+          const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // If the page opens with a hash, align it below the fixed navbar.
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          const navHeight = navbar ? navbar.offsetHeight : 74;
+          const targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top: targetTop, behavior: 'auto' });
+        }
+      }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-  </body>
+</body>
+
 </html>
